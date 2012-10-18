@@ -17,7 +17,7 @@ public:
   rng_sampler(mt19937 &in_R) : R(in_R) {}
   rng_sampler() {
     R = mt19937(); 
-    R.seed(std::time(0));
+    R.seed(std::clock());
   }
 
   result_type normal(result_type mu, result_type sigma) { 
