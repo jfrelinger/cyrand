@@ -9,7 +9,7 @@ from distutils.extension import Extension
 from numpy import get_include
 
 setup(name='cyrand',
-      version='0.1',
+      version='0.2',
       packages=['cyrand'],
       package_dir={'cyrand': 'cyrand'},
       description='Wrapper to Boost random numbers',
