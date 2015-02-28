@@ -19,6 +19,10 @@ public:
     R = mt19937(); 
     R.seed(std::clock());
   }
+  rng_sampler(unsigned long seed) {
+    R = mt19937();
+    R.seed(seed);
+  }
 
   result_type normal(result_type mu, result_type sigma) { 
     normal_distribution<result_type> nrm(mu, sigma);

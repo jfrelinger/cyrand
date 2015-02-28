@@ -22,6 +22,7 @@ cdef extern from "rng_wrapper.hpp" nogil:
     cdef cppclass rng_sampler[result_type]:
         #init
         rng_sampler(mt19937) nogil
+        rng_sampler(unsigned long) nogil
         rng_sampler()  nogil
         # methods (gamma and exp are using rate param)
         result_type normal(result_type, result_type) nogil
