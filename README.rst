@@ -26,10 +26,12 @@ Install via
 
     python setup.py install
 
-There is an example program and setup.py file in the "example"
-folder. Build it --inplace and run test_example.py to try it out.
-You may need to change the include_dirs to point to your installation 
-of Boost. 
+There are example programs in the "example" folder along with a setup.py file.
+To build them, change to the cyrand/example directory and build in place:
 
+::
 
+    python setup.py build_ext --inplace
 
+Then run test_example.py and/or test_example_seed.py to try them out. You may
+need to change the include_dirs to point to your installation of Boost.
